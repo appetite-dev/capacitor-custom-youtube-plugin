@@ -1,0 +1,31 @@
+{
+  "api": {
+    "name": "YoutubePlayerPlugin",
+    "slug": "youtubeplayerplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "play",
+        "signature": "(options: { videoId: string; }) => Promise<{ status: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ videoId: string; }"
+          }
+        ],
+        "returns": "Promise<{ status: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "play"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
