@@ -1,25 +1,64 @@
 # se-youtube-player
 
-Play youtube video on any device
+Capacitor plugin for playing YouTube videos on iOS.
+
+## Project Structure
+
+```text
+se-youtube-player/
+|-- src/
+|   |-- index.ts
+|   |-- interface.ts
+|   `-- web.ts
+|-- android/
+|   |-- src/main/java/com/stockedge/plugins/yotubeplayer/
+|   `-- src/main/res/
+|-- ios/
+|   |-- Sources/YoutubePlayerPlugin/
+|   `-- Tests/YoutubePlayerPluginTests/
+|-- package.json
+|-- Package.swift
+|-- SeYoutubePlayer.podspec
+|-- rollup.config.mjs
+`-- tsconfig.json
+```
+
+## What Lives Where
+
+`src/` contains the TypeScript plugin definition and web implementation.
+
+`android/` contains the native Android plugin code, player classes, and XML resources.
+
+`ios/` contains the native Swift implementation and iOS tests.
 
 ## Install
 
-To use npm
+Using npm:
 
 ```bash
 npm install se-youtube-player
-````
+```
 
-To use yarn
+Using yarn:
 
 ```bash
 yarn add se-youtube-player
 ```
 
-Sync native files
+Sync Capacitor after installation:
 
 ```bash
 npx cap sync
+```
+
+## Usage
+
+```ts
+import { YoutubePlayer } from 'se-youtube-player';
+
+await YoutubePlayer.play({
+  videoId: 'dQw4w9WgXcQ',
+});
 ```
 
 ## API
