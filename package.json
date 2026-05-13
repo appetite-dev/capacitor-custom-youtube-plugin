@@ -15,14 +15,18 @@
     "Package.swift",
     "SeYoutubePlayer.podspec"
   ],
-  "author": "Sanjib Kumar Mandal",
+  "author": {
+    "name": "Sanjib Kumar Mandal",
+    "email": "sanjib0248@gmail.com",
+    "url": "https://koniat.com"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sanjib-kumar-mandal/se-youtube-player.git.git"
+    "url": "git+https://github.com/appetite-dev/capacitor-custom-youtube-plugin.git"
   },
   "bugs": {
-    "url": "https://github.com/sanjib-kumar-mandal/se-youtube-player.git/issues"
+    "url": "https://github.com/appetite-dev/capacitor-custom-youtube-plugin/issues"
   },
   "keywords": [
     "capacitor",
